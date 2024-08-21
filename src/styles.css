@@ -1,1 +1,134 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0), black 80%),
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+  background-size: contain, 48px 48px, 48px 48px;
+  background-position: left, center, center;
+}
+
+input, form, button {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+:root {
+  --line-height: 1.5;
+  --grid-color: rgb(134, 134, 134);
+}
+
+html {
+  line-height: var(--line-height);
+}
+
+ul {
+  margin: 0;
+}
+
+app-root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: rgba(31, 31, 31, 0.21);
+  padding: 1rem;
+  border-bottom: 1px solid rgb(39, 39, 39);
+  backdrop-filter: blur(4px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.r-file-form {
+  backdrop-filter: blur(4px);
+  padding: 1rem;
+  border-radius: 5px;
+  border: 2px solid #202020;
+}
+
+.p-uploader {
+  background: white;
+  color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.5rem;
+  transition: all 300ms;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.p-uploader:hover {
+  background: black;
+  color: white;
+}
+
+.r-file-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  gap: 1rem;
+}
+
+.r-file-form > p {
+  margin: 0;
+}
+
+.r-file-form > div.m-content {
+  display: flex;
+}
+
+.r-file-form ul {
+  list-style-type: none;
+  padding-left: 0.5rem;
+}
+
+.r-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.r-root > button {
+  width: 100%;
+  max-width: 300px;
+  font-size: 1rem;
+}
+
+button:disabled {
+  background-color: #5d5d5d;
+  border-color: #5d5d5d;
+}
+
+button:hover:disabled {
+  background-color: #5d5d5d;
+  color: black;
+}
